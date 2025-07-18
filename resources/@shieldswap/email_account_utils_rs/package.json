@@ -1,0 +1,23 @@
+{
+  "name": "@shieldswap/email_account_utils_rs",
+  "version": "0.3.4",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "wasm-pack-inline": "0.1.1"
+  },
+  "scripts": {
+    "build": "wasm-pack build --release --target web && wasm-pack-inline ./pkg --dir dist",
+    "test:lint": "echo 'OK'"
+  }
+}
